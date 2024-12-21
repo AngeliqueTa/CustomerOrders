@@ -21,7 +21,11 @@
 
 ## customerorders
 
-Sales Orders for Customers Collection
+Sales Orders for Customers Collection App. You will need to link this app with the Business Accelarator Hub. 
+The API key needs to change in the .env file with a new API key. 
+Find the Odata v2 SalesOrders API in the BA Hub and copy that key. 
+
+Deployment are spesific to either Workplace, or other repository that is not defined. 
 
 ### Starting the generated app
 
@@ -29,6 +33,12 @@ Sales Orders for Customers Collection
 
 ```
     npm start
+```
+
+- It is always a good idea to build the app. This will notify you whether any files are corrupted:
+
+```
+    npm run build
 ```
 
 - It is also possible to run the application using mock data that reflects the OData Service URL supplied during application generation.  In order to run the application with Mock Data, run the following from the generated app root folder:
@@ -40,5 +50,5 @@ Sales Orders for Customers Collection
 #### Pre-requisites:
 
 1. Active NodeJS LTS (Long Term Support) version and associated supported NPM version.  (See https://nodejs.org)
-
-
+2. SAP Fiori Tools Extensions installed
+3. SAP Fiori environment set up in your development environment
